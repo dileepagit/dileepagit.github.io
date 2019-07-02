@@ -1,6 +1,6 @@
 ---
 title: "Testing Mathjax"
-excerpt: "Mmathjax testing on GitHub Pages"
+excerpt: "Mathjax testing on GitHub Pages"
 excerpt_separator: "<!--more-->"
 categories:
   - Random
@@ -9,7 +9,7 @@ tags:
   - blog
 mathjax: true
 ---
-# Testing Mathjax
+# Mathjax trial run
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
 
