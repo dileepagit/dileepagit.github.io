@@ -4,7 +4,12 @@
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ '/' | absolute_url }}">{{ site.title }}</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg">
+            <a href="{{ '/' | absolute_url }}">
+              {{ site.title }}
+              <img src="{{ domain }}/assets/pics/logo_main.png" alt="{{ link.title }}" />
+            </a>
+          </li>
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
@@ -12,9 +17,7 @@
               {% assign domain = site.url | append: site.baseurl %}
             {% endif %}
             <li class="masthead__menu-item">
-              <a href="{{ domain }}{{ link.url }}">{{ link.title }}
-              <img src="{{ domain }}assets/pics/logo_main.png" alt="{{ link.title }}" />
-                   </a>
+              <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
             </li>
           {% endfor %}
         </ul>
