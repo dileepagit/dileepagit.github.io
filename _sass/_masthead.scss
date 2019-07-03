@@ -51,8 +51,12 @@
     font-weight: 700;
      
      a {
+        text-decoration: none;
+        
         img {
            height: 4em;
+           vertical-align: middle;
+           border-style: none;
         }
         span{
             display: inline-block;
