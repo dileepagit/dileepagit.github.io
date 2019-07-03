@@ -6,9 +6,13 @@
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg">
             <a href="{{ '/' | absolute_url }}">
-              {{ site.title }}
+              <!--{{ site.title }}-->
               <img src="{{ domain }}/assets/pics/logo_main.png" alt="{{ link.title }}" />
+              <span>ai double dot</span>
             </a>
+            <div class="logo-subtitle">
+              <span>just the AI lab you needed</span>
+            </div>
           </li>
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
